@@ -1,0 +1,34 @@
+Imagine you're a day trader who's trying to maximize their profits from trading a single stock.
+Every day, you have the option to buy or sell shares of this stock, but you can only hold a single share at any given moment.
+Interestingly, you are also allowed to engage in same-day buying and selling.
+Your goal is to determine the maximum profit you can achieve from these transactions, given the daily stock prices and you can choose exactly one value of profit.
+suppose the profits are [3,4,5,5,3,3,3] then if you choose 3 then maximum profit is 12 and if you choose 5 then maximum profit is 10
+ 
+Example 1:
+Input: n=6, prices = [1,5,9,13,6,4]
+Output: 4
+Explanation: Purchase on day 1 (price = 1) and sell on day 2 (price = 5), profit = 4.
+Next, Purchase on day 2 (price = 5) and sell on day 3 (price = 9), profit = 4.
+Next, Purchase on day 3 (price = 9) and sell on day 4 (price = 13), profit = 4.
+Total profit = 4 * 3 = 12.
+ 
+Example 2:
+Input: n=5, prices = [1,2,3,4,5]
+Output: 4
+Explanation: Purchase on day 1 (price = 1) and sell on day 2 (price = 2), profit = 1.
+Next, Purchase on day 2 (price = 2) and sell on day 3 (price = 3), profit = 1.
+Next, Purchase on day 3 (price = 3) and sell on day 4 (price = 4), profit = 1.
+Next, Purchase on day 4 (price = 4) and sell on day 5 (price = 5), profit = 1.
+
+Total profit = 1 * 4 = 12.
+ 
+Example 3:
+Input: n=5,  prices = [7,6,4,3,1]
+Output: 0
+Explanation: It's not possible to achieve positive profit under these conditions, hence maximum profit = 0.
+ 
+Constraints:
+- You're provided with an array named 'prices', where prices[i] represents the stock's price on the i-th day.
+- The length of 'prices' will be at least 1 and no more than 30,000.
+- Each price within the 'prices' array will be a non-negative integer, not exceeding 10,000.
+
